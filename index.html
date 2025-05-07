@@ -73,7 +73,11 @@
 					<section class="wrapper style1 align-center">
 						<div class="inner medium" style="padding-top: 0em;"  >
 							<h2>Cadastre-se abaixo e entraremos em contato</h2>
-							<form id="submitButton" action="https://docs.google.com/forms/d/e/1FAIpQLScGpPqAJ-odJV-aZVmsvORC_VSmmw4eqT6W0dyKbFvM5-JWUQ/formResponse">
+							<script type="text/javascript">var submitted=false;</script>
+							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+							onload="if(submitted) {window.location='obrigado.html';}"></iframe>
+							
+							<form id="submitButton" action="https://docs.google.com/forms/d/e/1FAIpQLScGpPqAJ-odJV-aZVmsvORC_VSmmw4eqT6W0dyKbFvM5-JWUQ/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
 								<div class="fields">
 									<div class="field half">
 										<label>Nome</label>
